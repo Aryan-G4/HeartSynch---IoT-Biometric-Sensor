@@ -41,15 +41,10 @@ float: right;
 }
 
 .widget{
-    position: absolute;
-    left: 800px;
-    top: 500px;
     width: 400px;
     height: 300px;
     
-    color: #880808;
     background: #ffffff;
-    border: 5px solid #880808;
     border-radius: 5px;
 
     text-align: center;
@@ -58,9 +53,7 @@ float: right;
     letter-spacing: 1.2px;
     line-height: 30px;
 
-    margin-bottom: 10px;
-    margin-left: 20px;
-    position: relative;
+position: absolute;
 }
 
 .widget h1{
