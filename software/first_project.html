@@ -6,31 +6,77 @@
     <link rel="stylesheet" href="first_project.css">
     <meta name ="keywords" content="html, css">
     <meta name="description" content="...">
-    <title>My first web page</title>
+    <title>coolawesomeguys</title>
     
   </head>
 
   <body>
 
-    <img src="wall-e.jpg" alt="img.WALL-E" style= "position: absolute; left: 300px; top: 400px;">
+    <h1> <headers style= "font-size: 150px; position: absolute; left: 50px; top: 75px;">UTRA PROJECT</headers></h1>
+    <p> <paragraphs style= "font-size: 50px; position: absolute; left: 70px; top: 200px;">Your fitness levels: </headers></p>
+ 
+    <div style="background: #ffffff; top: 400px; left: 100px;"class="widget">
+      <h1>Heart Rate</h1>
+      <p class="text">96BPM</p>
+    </div>
 
-    <h1> <headers style= "font-size:larger; position: absolute; left: 300px; top: 50px;">UTRA PROJECT</headers></h1>
-    <p> <paragraphs style= "position: absolute; left: 250px; top: 125px;">IMPORTANT INFO ABOUT HEART RATE</headers></p>
-    
-    <h2> <headers style= "position: absolute; left: 50px; top: 300px;">HEART RATE</headers></h2>
-    <p> content section 2</p>
-    
-    <h2><headers style= "position: absolute; left: 600px; top: 300px;">TEMPERATURE</headers></h2>
-    <p>more content</p>
+    <div style="color: white; background: #000000; top: 400px; left: 900px;" class="widget">
+      <h1>Temperature</h1>
+      <p class="text">25 Degrees celsius</p>
+    </div>
 
+    <div style="color: white; background: #000000; top: 800px; left: 100px;" class="widget">
+      <h1>Blood Oxygen</h1>
+      <p class="text">25 Degrees celsius</p>
+    </div>
+
+    <div style="background: #ffffff; top: 800px; left: 800px;" class="widget">
+      <h1>Call Button</h1>
+      <p class="text">25 Degrees celsius</p>
+    </div>
 
   </body>
 
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+  </script>
+  
+  <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+  
+  <script>
+    var xyValues = [
+      {x:50, y:7},
+      {x:60, y:8},
+      {x:70, y:8},
+      {x:80, y:9},
+      {x:90, y:9},
+      {x:100, y:9},
+      {x:110, y:10},
+      {x:120, y:11},
+      {x:130, y:14},
+      {x:140, y:14},
+      {x:150, y:15}
+    ];
+    
+    new Chart("myChart", {
+      type: "scatter",
+      data: {
+        datasets: [{
+          pointRadius: 4,
+          pointBackgroundColor: "rgb(0,0,255)",
+          data: xyValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          xAxes: [{ticks: {min: 40, max:160}}],
+          yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+    </script>
 
-<script
-src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
-</script>
 
-<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
 
 </html>
