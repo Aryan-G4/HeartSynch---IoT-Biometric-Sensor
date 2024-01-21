@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="update thingie" href="script.js">
+    <meta name ="keywords" content="html, css">
+    <meta name="description" content="...">
+    <title>coolawesomeguys</title>
+    
+  </head>
+
+<!-- CSS Code -->
+<style>
+  /* Popup container */
+ .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    color: #fff;
+    box-shadow:  30px 30px 10px rgba(128, 128, 128, 0.479);
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px;
+    position: absolute;
+    bottom: 100%;
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  } 
+</style>
+
+<!-- Body -->
+  <body>
+
+  <!-- Shapes -->
+  <style>
+    .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 250px solid transparent;
+      border-right: 250px solid transparent;
+      border-top: 300px solid #01214f;
+      position: absolute;
+      right: 0%;
+      top: 0%;
+    }
+  </style>
+  <div class="triangle-down"></div>
+
+  <style>
+      .circle {
+        height: 400px;
+        width: 400px;
+        background-color: #f6abb6;
+        opacity: 0.5;
+        border-radius: 50%;
+        position: absolute;
+        right: -7.5%;
+        top: 25%;
+        transform: translate(-50%, -20%);
+        border-radius: 200px 200px 0 0;
+        border-color: #ffffff;
+      }
+  </style>
+  <div class="circle"></div>
+        
+        
+
+
+  <!-- Logo Gif -->
+  <img src="https://media3.giphy.com/media/FoS9TZyfmtg9LE2Kb2/giphy-preview.gif" alt="notif" style="position: absolute; right: 50px; top: 125px; width:300px;height:275px;">
+
+  <!-- Title -->
+  <h1 style= "font-size: 100px; position: absolute; left: 15px; top: -30px; background: linear-gradient(to right, #eee3e7, #ead5dc, #f4b6c2, #f6abb6);
+     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;background-clip: text;">HEARTSYNC<h1>
+  <p> <paragraphs style= "font-size: 50px; position: absolute; left: 30px; top: 150px;">Your health matters </headers></p>
+ 
+ <!-- Heart Rate Widget -->
+  <div style="background: #eee3e7; top: 400px; left: 30px;"class="widget">
+    <h3>Heart Rate</h3>
+  </div>
+    
+  <h3 style= "position: absolute; top: 300px; font-size: 200px;" id="myHeartBeat"></h3>
+  <h1 style= "position: absolute; top: 700px; left: 75px; font-size: 50px">BPM</h1>
+    
+  <script>
+    var heartBeat = 89;//HEART BEAT SIGNAL HERE
+    document.getElementById("myHeartBeat").innerHTML = heartBeat;
+  </script>
+  
+  <img src="https://media.tenor.com/rz_d_Zc-ChEAAAAi/duck-cute.gif" alt="duck-cute" style="position: absolute; right: 375px; top: 600px; width:200px;height:200px;">
+  
+  <!-- Body Temp Widget --> 
+  <div style="font-size: 50px; background: #eee3e7; top: 850px; left: 30px;"class="widget">
+    <h3>Body Temperature</h3>
+  </div>
+  
+  <h3 style= "position: absolute; top: 750px; left: 60px; font-size: 200px;" id="myBodyTemp"></h3>
+  <h1 style= "position: absolute; top: 1150px; left: 75px; font-size: 50px">&deg;C</h1>
+  
+  <script>
+    var bodyTemp = 69;//BODY TEMPERATURE SIGNAL HERE
+    document.getElementById("myBodyTemp").innerHTML = bodyTemp;
+  </script>
+    
+  <div class="square"></div>
+  
+  <!-- Blood Oxygen Widget -->
+  <div style="font-size: 50px; color: eee3e7; background: #eee3e7; top: 1300px; left: 30px;" class="widget">
+    <h3>Blood Oxygen</h3>
+  </div>
+    
+  <h3 style= "position: absolute; top: 1200px; left: 60px; font-size: 200px;" id="myBloodOxy"></h3>
+  <h1 style= "position: absolute; top: 1600px; left: 75px; font-size: 50px">%</h1>
+  
+  <script>
+    var bloodOxy = 76; //BLOOD OXYGEN LEVEL HERE
+    document.getElementById("myBloodOxy").innerHTML = bloodOxy;
+  </script>
+  
+  <!-- Call Feature Widget -->
+  <div style="font-size: 50px; color: white; background: #f6abb6; top: 1750px; left: 30px;" class="widget">
+    <h3>Call Button</h3>
+    <p style="position: absolute; font-size: 50px; top: 175px; left: 150px;" class="text">No Calls Currently</p>
+  </div>
+      
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <body>
+  
+  <canvas id="myGraph" style="width:100%;max-width:600px"></canvas>
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+  
+  <script>
+  var a = 5;
+  
+  const xValues = ["Internal temp"];
+  const yValues = [heartBeat, 105];
+  const sectionColors = ["#01214f", "#eee3e7"];
+  
+  new Chart("myGraph", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: sectionColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {
+      display: false,
+    }
+    }
+  });
+
+const x2Values = [""];
+const y2Values = [bodyTemp];
+const barColors = ["#851e3e"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: x2Values,
+    datasets: [{
+      maxBarThickness: 200,
+      backgroundColor: barColors,
+      data: y2Values,
+      
+    }]
+  },
+  options: {
+    scales: {
+        xAxes: [{
+            gridLines: {
+                display:false,
+            }
+            
+        }],
+        yAxes: [{
+          gridLines: false,
+          beginAtZero: true,
+          ticks: {display:false,}
+        }]
+    }, 
+    legend: {
+      display: false,
+    }
+}
+
+});
+  </script>
+  
+  </body>
+  
+<!--Pop ups-->
+<div style='top: 500px; left:-10px;' class='popup'>
+    <span style= 'background-color: rgb(255, 5, 5); font-size: 100px;' class='popuptext' id='Warning'><b>Possible&nbsp;Fall<br>Check&nbsp;Patient</b></span>
+</div> 
+
+<div style='top: 2000px; left:10px;' class='popup'>
+  <span style= 'background-color: rgb(5, 255, 5); font-size: 75px;' class='popuptext' id='Calling'>Call&nbsp;From&nbsp;Patient</span>
+</div> 
+
+<script>
+  if(0){//INSERT ACCELEROMETER SIGNAL IN THIS IF STATMENT
+    var popup = document.getElementById('Warning');
+    popup.classList.toggle('show');
+  }
+
+  if(0){//INSERT BUTTON SIGNAL IN THIS IF STATEMENT
+    var popup = document.getElementById('Calling');
+    popup.classList.toggle('show');
+  }
+</script>
+    
+   
+    
+
+</html>
