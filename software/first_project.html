@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="first_project.css">
+    <link rel="update thingie" href="first_project.js">
     <meta name ="keywords" content="html, css">
     <meta name="description" content="...">
     <title>coolawesomeguys</title>
@@ -11,6 +13,41 @@
   </head>
 
   <body>
+
+    <style>
+      .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+        border-top: 300px solid #01214f;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+      }
+      </style>
+      </head>
+
+      <div class="triangle-down"></div>
+  
+      <style>
+        .circle {
+          height: 400px;
+          width: 400px;
+          background-color: #f6abb6;
+          opacity: 0.5;
+          border-radius: 50%;
+          position: absolute;
+          right: -7.5%;
+          top: 25%;
+          transform: translate(-50%, -20%);
+          border-radius: 200px 200px 0 0;
+          border-color: #ffffff;
+        }
+        </style>
+        </head>
+        <div class="circle"></div>
+
 
     <img src="milkand mocca.gif" alt="milkandmocca" style="position: absolute; right: 550px; top: -20px; width:480px;height:380px;">
 
@@ -38,6 +75,7 @@
       <h1>Call Button</h1>
       <p class="text">25 Degrees celsius</p>
     </div>
+      
 
   </body>
 
@@ -47,9 +85,9 @@
   <canvas id="myGraph" style="width:100%;max-width:600px"></canvas>
   
   <script>
-  const xValues = ["Italy", "India"];
-  const yValues = [55, 45];
-  const barColors = ["#2b5797", "#eee3e7"];
+  const xValues = ["Internal temp"];
+  const yValues = [55, 105];
+  const barColors = ["#01214f", "#eee3e7"];
   
   new Chart("myGraph", {
     type: "doughnut",
@@ -63,7 +101,6 @@
     options: {
       title: {
         display: true,
-        text: "World Wide Wine Production 2018"
       }
     }
   });

@@ -8,6 +8,8 @@ body {
     letter-spacing: 1px;
 }
 
+/*<meta http-equiv="refresh" content="5" />*/
+
 
 img {
     width: 300px;
@@ -60,8 +62,10 @@ img {
     #myGraph {
 
     position: absolute;
-    left: 8%;
+    left: 10%;
     top: 60%;
     }
+
+
 
 
