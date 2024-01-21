@@ -4,6 +4,7 @@
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5" />
     <link rel="stylesheet" href="first_project.css">
     <link rel="update thingie" href="first_project.js">
     <meta name ="keywords" content="html, css">
@@ -49,7 +50,7 @@
         <div class="circle"></div>
 
 
-    <img src="milkand mocca.gif" alt="milkandmocca" style="position: absolute; right: 550px; top: -20px; width:480px;height:380px;">
+    <img src="notification.gif" alt="notif" style="position: absolute; right: 600px; top: 25px; width:400px;height:375px;">
 
     <h1 style= "font-size: 100px; position: absolute; left: 50px; top: 5px; background: linear-gradient(to right, #eee3e7, #ead5dc, #f4b6c2, #f6abb6);
       -webkit-text-fill-color: transparent;
@@ -83,27 +84,52 @@
   <body>
   
   <canvas id="myGraph" style="width:100%;max-width:600px"></canvas>
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
   
   <script>
   const xValues = ["Internal temp"];
   const yValues = [55, 105];
-  const barColors = ["#01214f", "#eee3e7"];
+  const sectionColors = ["#01214f", "#eee3e7"];
   
   new Chart("myGraph", {
     type: "doughnut",
     data: {
       labels: xValues,
       datasets: [{
-        backgroundColor: barColors,
+        backgroundColor: sectionColors,
         data: yValues
       }]
     },
-    options: {
-      title: {
-        display: true,
-      }
-    }
   });
+
+const x2Values = [""];
+const y2Values = [55];
+const barColors = ["#851e3e"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: x2Values,
+    datasets: [{
+      barPercentage: 0.5,
+      backgroundColor: barColors,
+      data: y2Values
+    }]
+  },
+  options: {
+    scales: {
+        xAxes: [{
+            gridLines: {
+                display:false
+            }
+            
+        }],
+        yAxes: [{
+          gridLines: false,
+          ticks: {min: 0, max:160}}]
+    }
+}
+});
   </script>
   
   </body>
