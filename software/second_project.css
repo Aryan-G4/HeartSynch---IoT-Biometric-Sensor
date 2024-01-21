@@ -1,48 +1,30 @@
 body {
     background-color: #ffffff;
     margin: 50px;
-    
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #000000;
+    color: #01214f;
     font-size: 24px;
     font-weight: 100;
-    line-height: .2;
     letter-spacing: 1px;
 }
 
-
-.headers {
-    font-style: normal;
-    font-size: larger;
-    position: relative;
-}
-
-.paragraphs{
-    font-style: normal;
-    position: relative;
-}
-
 img {
-    width: 150px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     position: relative;
+}
 
-  }
-
-.username {
-font-weight: bold;
-font-family: 'Times New Roman', Times, serif;
-font-size: 54px;
-border-radius: 10px;
-color: blueviolet;
-float: right;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .widget{
-    width: 400px;
-    height: 300px;
+    width: 1000px;
+    height: 600px;
     
     background: #ffffff;
     border-radius: 5px;
@@ -53,12 +35,83 @@ float: right;
     letter-spacing: 1.2px;
     line-height: 30px;
 
-position: absolute;
+    position: absolute;
 }
 
 .widget h1{
-    font-size: 50px;
+    font-size: 100px;
     margin-top: 9%;
     letter-spacing: 2px;
     line-height: 30px;
 }
+
+.triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 250px solid transparent;
+    border-right: 250px solid transparent;
+    border-top: 300px solid #01214f;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+}
+
+.circle {
+    height: 400px;
+    width: 400px;
+    background-color: #f6abb6;
+    opacity: 0.5;
+    border-radius: 50%;
+    position: absolute;
+    right: -7.5%;
+    top: 25%;
+    transform: translate(-50%, -20%);
+    border-radius: 200px 200px 0 0;
+    border-color: #ffffff;
+}
+
+#myGraph {
+
+    position: absolute;
+    left: 10%;
+    top: 60%;
+}
+
+ /* Popup container */
+ .popup {
+    top: 700px;
+    left:700px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  /* The actual popup (appears on top) */
+  .popup .popuptext {
+    visibility: hidden;
+    background-color: rgb(255, 5, 5);
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px;
+    position: absolute;
+    bottom: 50%;
+    font-size: 200px;
+    right: 30px; /*fix the popup in the wrong spot*/
+  }
+  
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  } 
