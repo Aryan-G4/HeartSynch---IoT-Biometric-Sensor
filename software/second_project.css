@@ -75,12 +75,12 @@ img {
     position: absolute;
     left: 10%;
     top: 60%;
+
+    
 }
 
  /* Popup container */
  .popup {
-    top: 700px;
-    left:700px;
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -89,15 +89,13 @@ img {
   /* The actual popup (appears on top) */
   .popup .popuptext {
     visibility: hidden;
-    background-color: rgb(255, 5, 5);
     color: #fff;
+    box-shadow:  30px 30px 10px rgba(128, 128, 128, 0.479);
     text-align: center;
     border-radius: 10px;
     padding: 50px;
     position: absolute;
-    bottom: 50%;
-    font-size: 200px;
-    right: 30px; /*fix the popup in the wrong spot*/
+    bottom: 100%;
   }
   
   /* Toggle this class when clicking on the popup container (hide and show the popup) */

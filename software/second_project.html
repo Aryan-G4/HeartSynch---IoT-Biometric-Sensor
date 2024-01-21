@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
   <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="second_project.css">
-    <meta name ="keywords" content="html, css">
-    <meta name="description" content="...">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='second_project.css'>
+    <meta name ='keywords' content='html, css'>
+    <meta name='description' content='...'>
     <title>coolawesomeguys</title>
     
   </head>
@@ -15,52 +15,52 @@
   <body>
 
     <!--Title Bar-->
-    <div class="triangle-down"></div>
-    <div class="circle"></div>
+    <div class='triangle-down'></div>
+    <div class='circle'></div>
 
-    <img src="milkand mocca.gif" alt="gitboi" style="position: absolute; right: 550px; top: -20px; width:480px;height:380px;">
+    <img src='milkand mocca.gif' alt='gitboi' style='position: absolute; right: 550px; top: -20px; width:480px;height:380px;'>
 
-    <h1 style= "font-size: 100px; position: absolute; left: 50px; top: 5px; background: linear-gradient(to right, #eee3e7, #ead5dc, #f4b6c2, #f6abb6);
+    <h1 style= 'font-size: 100px; position: absolute; left: 50px; top: 5px; background: linear-gradient(to right, #eee3e7, #ead5dc, #f4b6c2, #f6abb6);
       -webkit-text-fill-color: transparent;
-      -webkit-background-clip: text;background-clip: text;">UTRA PROJECT<h1>
-    <p> <paragraphs style= "font-size: 50px; position: absolute; left: 70px; top: 200px;">Your fitness levels: </headers></p>
+      -webkit-background-clip: text;background-clip: text;'>UTRA PROJECT<h1>
+    <p> <paragraphs style= 'font-size: 50px; position: absolute; left: 70px; top: 200px;'>Your fitness levels: </headers></p>
  
 
     <!-- Widgets to display information-->
-    <div style="background: #eee3e7; top: 400px; left: 0px;"class="widget">
+    <div style='background: #eee3e7; top: 400px; left: 0px;'class='widget'>
       <h1>Heart Rate</h1>
-      <p class="text">96BPM</p>
+      <p class='text'>96BPM</p>
     </div>
 
-    <div style="color: white; background: #f6abb6; top: 400px; right: 0px;" class="widget">
+    <div style='color: white; background: #f6abb6; top: 400px; right: 0px;' class='widget'>
       <h1>Temperature</h1>
-      <p class="text">25 Degrees celsius</p>
+      <p class='text'>25 Degrees celsius</p>
     </div>
 
-    <div style="color: white; background: #f6abb6; top: 1000px; left: 0px;" class="widget">
+    <div style='color: white; background: #f6abb6; top: 1000px; left: 0px;' class='widget'>
       <h1>Blood Oxygen</h1>
-      <p class="text">25 Degrees celsius</p>
+      <p class='text'>25 Degrees celsius</p>
     </div>
 
-    <div style="background: #eee3e7; top: 1000px; right: 0px;" class="widget">
+    <div style='background: #eee3e7; top: 1000px; right: 0px;' class='widget'>
       <h1>Call Button</h1>
-      <p class="text">25 Degrees celsius</p>
+      <p class='text'>25 Degrees celsius</p>
     </div>
 
   </body>
 
   <!--Graphs to Display Information-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js'></script>
   
-  <canvas id="myGraph" style="width:100%;max-width:600px"></canvas>
+  <canvas id='myGraph' style='width:100%;max-width:600px'></canvas>
   
   <script>
-    const xValues = ["Internal temp"];
+    const xValues = ['Internal temp'];
     const yValues = [55, 105];
-    const barColors = ["#01214f", "#eee3e7"];
+    const barColors = ['#01214f', '#eee3e7'];
     
-    new Chart("myGraph", {
-      type: "doughnut",
+    new Chart('myGraph', {
+      type: 'doughnut',
       data: {
         labels: xValues,
         datasets: [{
@@ -71,20 +71,32 @@
       options: {
         title: {
           display: true,
+        },
+        legend: {
+          display: false,
         }
       }
     });
   </script>
 
-<div script="top: 100;" class="popup" onclick="myFunction()">Click me!
-  <span class="popuptext" id="myPopup">Possible&nbsp;Fall<br>Check&nbsp;Patient</span>
+<!--Pop ups-->
+<div style='top: 700px; left:275px;' class='popup'>
+    <span style= 'background-color: rgb(255, 5, 5); font-size: 200px;' class='popuptext' id='Warning'>Possible&nbsp;Fall<br>Check&nbsp;Patient</span>
+</div> 
+
+<div style='top: 1450px; left:1000px;' class='popup'>
+  <span style= 'background-color: rgb(5, 255, 5); font-size: 75px;' class='popuptext' id='Calling'>Call&nbsp;From&nbsp;Patient</span>
 </div> 
 
 <script>
-  // When the user clicks on <div>, open the popup
-  function myFunction() {
-    var popup = document.getElementById("myPopup");
-    popup.classList.toggle("show");
+  if(1){//INSERT ACCELEROMETER SIGNAL IN THIS IF STATMENT
+    var popup = document.getElementById('Warning');
+    popup.classList.toggle('show');
+  }
+
+  if(1){//INSERT BUTTON SIGNAL IN THIS IF STATEMENT
+    var popup = document.getElementById('Calling');
+    popup.classList.toggle('show');
   }
   </script>
 
