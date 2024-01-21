@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="update thingie" href="script.js">
+    <meta name ="keywords" content="html, css">
+    <meta name="description" content="...">
+    <title>coolawesomeguys</title>
+    
+  </head>
+
+  <body>
+
+    <style>
+      .triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+        border-top: 300px solid #01214f;
+        position: absolute;
+        right: 0%;
+        top: 0%;
+      }
+      </style>
+      </head>
+
+      <div class="triangle-down"></div>
+  
+      <style>
+        .circle {
+          height: 400px;
+          width: 400px;
+          background-color: #f6abb6;
+          opacity: 0.5;
+          border-radius: 50%;
+          position: absolute;
+          right: -7.5%;
+          top: 25%;
+          transform: translate(-50%, -20%);
+          border-radius: 200px 200px 0 0;
+          border-color: #ffffff;
+        }
+        </style>
+        </head>
+        <div class="circle"></div>
+
+
+    <img src="https://media3.giphy.com/media/FoS9TZyfmtg9LE2Kb2/giphy-preview.gif" alt="notif" style="position: absolute; right: 50px; top: 125px; width:300px;height:275px;">
+
+    <h1 style= "font-size: 100px; position: absolute; left: 15px; top: -30px; background: linear-gradient(to right, #eee3e7, #ead5dc, #f4b6c2, #f6abb6);
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;background-clip: text;">OMNI MAN<h1>
+    <p> <paragraphs style= "font-size: 50px; position: absolute; left: 30px; top: 150px;">Your health metrics </headers></p>
+ 
+    <div style="background: #eee3e7; top: 400px; left: 30px;"class="widget">
+      <h3>Heart Rate</h3>
+      </div>
+      
+    <script>
+    function myFunction(number, type) {
+      if(type == 'heartBeat'){
+      document.getElementById("myHeartBeat").innerHTML = number;}
+      else if (type == 'myInternalTemp'){
+      document.getElementById("myTemp").innerHTML = number;
+      }
+      myFunction(89, 'heartBeat'); 
+    }
+    </script>
+
+
+    </head>
+    
+    <body onload="myFunction()">
+    
+      <h3><paragraphs style= "position: absolute; top: 500px; font-size: 200px;"> <span id="myHeartBeat"></span></paragraphs></h3>
+      <h1 style= "position: absolute; top: 700px; left: 75px; font-size: 50px">BPM</h1>
+    
+    </body>
+    
+    <div style="font-size: 50px; background: #eee3e7; top: 850px; left: 30px;"class="widget">
+      <h3>Internal Temperature</h3>
+    </div>
+    
+
+    </head>
+    
+    <body onload="myFunction1()">
+    
+      <h3><paragraphs style= "position: absolute; top: 950px; left: 60px; font-size: 200px;"> 25</paragraphs></h3>
+      <h1 style= "position: absolute; top: 1150px; left: 75px; font-size: 50px">&deg;C</h1>
+    
+    </body>
+
+    <div style="color: eee3e7; background: #eee3e7; top: 1300px; left: 30px;" class="widget">
+      <h3>Blood Oxygen</h3>
+      <p class="text">25 Degrees celsius</p>
+    </div>
+
+    <div style="color: white; background: #f6abb6; top: 1750px; left: 30px;" class="widget">
+      <h3>Call Button</h3>
+      <p class="text">25 Degrees celsius</p>
+    </div>
+      
+
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <body>
+  
+  <canvas id="myGraph" style="width:100%;max-width:600px"></canvas>
+  <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+  
+  <script>
+  const xValues = ["Internal temp"];
+  const yValues = [55, 105];
+  const sectionColors = ["#01214f", "#eee3e7"];
+  
+  new Chart("myGraph", {
+    type: "doughnut",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: sectionColors,
+        data: yValues
+      }]
+    },
+    options: {
+      legend: {
+      display: false,
+    }
+    }
+  });
+
+const x2Values = [""];
+const y2Values = [55];
+const barColors = ["#851e3e"];
+
+new Chart("myChart", {
+  type: "bar",
+  data: {
+    labels: x2Values,
+    datasets: [{
+      maxBarThickness: 200,
+      backgroundColor: barColors,
+      data: y2Values,
+      
+    }]
+  },
+  options: {
+    scales: {
+        xAxes: [{
+            gridLines: {
+                display:false,
+            }
+            
+        }],
+        yAxes: [{
+          gridLines: false,
+          beginAtZero: true,
+          ticks: {display:false,}
+        }]
+    }, 
+    legend: {
+      display: false,
+    }
+}
+
+});
+  </script>
+  
+  </body>
+  </html>
+    
+    </script>
+
+</html>
