@@ -1,4 +1,7 @@
-# UTRA2024-Hackathon
+# HeartSynch - An IoT Wearable Biometric sensor
+## Designed and constructed by Aryan Ghosh, Chris Koehlmann, Joseph Carnide, and, of course, Simon Louis
+### Readme by Aryan Ghosh
+
 Our Submission for the UTRA 2024 hackathon 20/1/24
 ![ssMobileProto2](https://github.com/Aryan-G4/UTRA2024-Hackathon/assets/119129454/c0ac82de-5124-4587-a2a6-8a6a6935c434)
 
