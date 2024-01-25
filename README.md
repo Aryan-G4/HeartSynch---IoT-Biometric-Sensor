@@ -11,6 +11,10 @@ https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/b
 
 
 
+https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/3a13ab87-4cf6-4b9f-ae00-d6e9299db4c0
+
+
+
 
 
 
