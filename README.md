@@ -4,11 +4,19 @@ Readme currently under construction!
 
 HeartSynch is a portable and wearable biometric sensor and emergency device that allows a user's family to remotely monitor vitals and be contacted easily in the case of an emergency.
 
-https://cdn.discordapp.com/attachments/1196842622187216936/1198672854397505536/ssMobileProto2.png?ex=65bfc216&is=65ad4d16&hm=8d3d5b9a2abc479777f1423b6fb7a8c4e73f2112451ec51d6c63cf530bd1e76f&
+
+![IMG_3725](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/3c646009-eb83-4fa2-a30a-dc4f3b6d2930)
+https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/b9ecb24f-a9d3-4637-86a1-f7fe37d51cce
+<img width="562" alt="image" src="https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/d3363f49-8608-4c10-ad13-eaea31a53d4f">
+![IMG_3719](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/20c2a3f9-b8f4-4f39-87bf-e74b92b9cc8c)
 
 
-https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/d551e37f-1988-43fc-a4cd-29fc1c9b18dd
 
 
-https://cdn.discordapp.com/attachments/1196842622187216936/1199801650974568468/IMG_3725.jpg?ex=65c3dd5c&is=65b1685c&hm=cee259f5720109f9a8d3cd4d32decaf452ffeae8d12904a4d379e0e1b352a809&
+
+
+
+
+
+
 
