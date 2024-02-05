@@ -29,15 +29,6 @@ This project was created to solve a problem we see in the medical field today. A
 HeartSynch is a wearable device using an ESP32 development board to sense a user's heart rate, blood oxygen, temperature, and movement and displays all of these metrics on a website. This website, with the purchase of a domain, can be accessed by any member of the user's family, showing them important biometric data in real time and alerting them when the sensor detects a biometric that is in an unsafe range (ex., A constant heart rate of 60bpm). This device allows for a more convenient safety net for users with health risks. 
 ![Screenshot 2024-01-24 200933](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/bb329d6b-4eb7-49f0-9e54-5475ddae5023)
 
-## Hardware Component
-The mechanical design of our system revolved around the constraints created by the electrical components we had to use. The chassis was built around the electronic components and went through multiple rounds of iteration to ensure all components were secure and the device was as comfortable as possible without sacrificing durability. All parts of the chassis are 3d printed using PLA and all files are included under the "mechanical" folder. The mechanical design features a ratcheting ladder strap that allows the user to wear and remove the device extremely easily while ensuring the device is secured.
-![IMG_3688](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/bae5fa0f-2977-4ff0-9e95-fba89ce2aa39)
-
-### Solidworks model
-<img width="562" alt="image" src="https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/6ed4249d-8dfd-4c5e-9cc7-c51e4d49972d">
-To ensure all parts fit together and that no time was wasted during construction. We thoroughly planned out the mechanical design using Solidworks. This also ensured that the device fit a wide range of users. 
-
-
 ## Electrical Component
 ![IMG_3720](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/cd76d473-1fb9-4cc8-be60-c57d2cdb5e28)
 
@@ -47,19 +38,24 @@ The Electrical component boasts an ESP32 microcontroller development board mainl
 ![electrical schematic](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/355a4c2b-8783-4975-bae4-c4065def7e02)
 
 Using KiCad, I created a schematic of the electrical system that had to be implemented to allow the ESP32 to pass all electrical rules checks and to properly recieve data from all sensors. 
+To ensure rapid production and prototyping, I used a breadboard to assemble the circuit shown in the schematic and colour-coded wires to allow for easy installation, debugging, and removal of wires. 
+![image](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/00b2a4d8-2e09-43c8-8ace-3f3381320d84)
 
-![486B255D-B9AB-4188-B3D1-C4E8ACC050CD](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/e878659e-f6ae-4cb4-bc1c-b90ef3d461d8)
-![7FF55709-1F49-4A41-8A71-BEF448E0833A](https://github.com/Aryan-G4/Dexerity-Dash/assets/119129454/18eb1549-8e2a-45c8-859b-1432bd40856f)
-To ensure rapid production and prototyping, I used a breadboard to assemble the circuit show in the schematic, colour coding wires to allow for easy installation, debugging, and removal of wires. 
+
+## Hardware Component
+The mechanical design of our system revolved around the constraints created by the electrical components we had to use. The chassis was built around the electronic components and went through multiple rounds of iteration to ensure all components were secure and the device was as comfortable as possible without sacrificing durability. All parts of the chassis are 3d printed using PLA and all files are included under the "mechanical" folder. The mechanical design features a ratcheting ladder strap that allows the user to wear and remove the device extremely easily while ensuring the device is secured.
+![IMG_3688](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/bae5fa0f-2977-4ff0-9e95-fba89ce2aa39)
+
+### Solidworks model
+<img width="562" alt="image" src="https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/6ed4249d-8dfd-4c5e-9cc7-c51e4d49972d">
+To ensure all parts fit together and that no time was wasted during construction. We thoroughly planned out the mechanical design using Solidworks. This also ensured that the device fit a wide range of users. 
+
 
 ## Software Component
 ![IMG_3698](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/3e7db2db-5fec-477b-af95-207d6d6d29c9)
 ![image](https://github.com/Aryan-G4/HeartSynch---IoT-Biometric-Sensor/assets/119129454/70630196-f0ef-4156-98cf-ad1564845c6d)
 
 Using HTML, CSS, JavaScript, and C, our team was able to collect data from the sensors into the ESP32. We then used the ESP32 to host a local webpage to display and inform users of current biometric data. The webpage we created works on both PC and Mobile allowing for a seamless user experience. 
-
-
-## Early Work
 
 
 
